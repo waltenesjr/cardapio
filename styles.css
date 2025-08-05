@@ -28,7 +28,7 @@ body {
     text-align: center;
     margin-bottom: 40px;
     padding: 30px 20px;
-    background: linear-gradient(135deg, #ff6b6b, #ffa500);
+    background: linear-gradient(135deg, #9c27b0, #673ab7, #e91e63);
     border-radius: 20px;
     color: white;
     position: relative;
@@ -191,6 +191,52 @@ body {
 .premium .item-price {
     color: #ff8f00;
     background: rgba(255, 143, 0, 0.2);
+}
+
+/* Drinks especiais da festa - tema futurista */
+.drink-special {
+    background: linear-gradient(135deg, #9c27b0, #673ab7);
+    border: 2px solid #e91e63;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.drink-special::before {
+    background: linear-gradient(45deg, #ff4081, #9c27b0);
+}
+
+.drink-special .item-info h3 {
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 64, 129, 0.5);
+}
+
+.drink-special .item-info p {
+    color: #e1bee7;
+    font-weight: 400;
+}
+
+.drink-special .item-price {
+    color: #ffffff;
+    background: linear-gradient(135deg, #ff4081, #e91e63);
+    box-shadow: 0 0 15px rgba(255, 64, 129, 0.4);
+    border: 1px solid #ff4081;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.drink-special:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(156, 39, 176, 0.3);
+}
+
+/* Animação especial para drinks */
+@keyframes neonGlow {
+    0%, 100% { box-shadow: 0 5px 15px rgba(255, 64, 129, 0.2); }
+    50% { box-shadow: 0 5px 25px rgba(255, 64, 129, 0.4); }
+}
+
+.drink-special:hover {
+    animation: neonGlow 2s infinite;
 }
 
 /* Footer */
